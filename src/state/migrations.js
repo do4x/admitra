@@ -19,6 +19,10 @@ export function migrateState(raw) {
     return migrateV1toV2(parsed);
   }
 
+  if (version < 3) {
+    return migrateV2toV3(parsed);
+  }
+
   return parsed;
 }
 
@@ -56,5 +60,23 @@ function migrateV1toV2(v1) {
     mistakes: v1.mistakes ?? [],
     selectedDay: v1.selectedDay ?? 1,
     diagnosticDays: v1.diagnosticDays ?? fresh.diagnosticDays
+  };
+}
+
+function migrateV2toV3(v2) {
+  const fresh = makeInitialState();
+
+  return {
+    stateVersion: STATE_VERSION,
+    profile: v2.profile ?? fresh.profile,
+    placement: v2.placement ?? fresh.placement,
+    chapters: v2.chapters ?? fresh.chapters,
+    gamification: v2.gamification ?? fresh.gamification,
+    session: v2.session ?? fresh.session,
+    questionHistory: v2.questionHistory ?? fresh.questionHistory,
+    mistakes: v2.mistakes ?? fresh.mistakes,
+    selectedDay: v2.selectedDay ?? fresh.selectedDay,
+    diagnosticDays: v2.diagnosticDays ?? fresh.diagnosticDays,
+    roadmap: fresh.roadmap
   };
 }

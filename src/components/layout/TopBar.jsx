@@ -7,6 +7,7 @@ export function TopBar({ gamification, activeTab, onTabChange, onReset }) {
 
   const tabs = [
     ["skillTree", "Lectii"],
+    ["roadmap", "Parcurs"],
     ["statistics", "Statistici"],
     ["weekly", "Planner"],
     ["daily", "Brief Zilnic"],

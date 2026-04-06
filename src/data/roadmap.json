@@ -1,0 +1,752 @@
+{
+  "meta": {
+    "version": 1,
+    "title": "Parcurs de studiu: Bac → Admitere Politehnica",
+    "description": "De la fundamentele Bac M1 la cele mai grele probleme de admitere."
+  },
+  "phases": [
+    {
+      "id": "phase_1",
+      "order": 1,
+      "title": "Bazele Matematicii",
+      "description": "Numere reale, logică, inducție și progresii — fundamentul oricărei analize.",
+      "requiredCompletionRatio": 0.75,
+      "milestones": [
+        {
+          "id": "ms_alg_reale",
+          "chapterId": "alg",
+          "subject": "math",
+          "title": "Mulțimea numerelor reale și operații",
+          "description": "Operații algebrice, ordonare, modul, puteri, intervale.",
+          "tags": ["bac"],
+          "order": 1,
+          "subtopicId": "alg_real_numbers",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "alg",
+            "minAccuracy": 0.65,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_alg_logica",
+          "chapterId": "alg",
+          "subject": "math",
+          "title": "Logică matematică și teoria mulțimilor",
+          "description": "Operații logice, operații cu mulțimi, relații.",
+          "tags": ["bac"],
+          "order": 2,
+          "subtopicId": "alg_logic_sets",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "alg",
+            "minAccuracy": 0.65,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_alg_inductie",
+          "chapterId": "alg",
+          "subject": "math",
+          "title": "Inducție matematică",
+          "description": "Metoda inducției matematice și aplicații.",
+          "tags": ["bac"],
+          "order": 3,
+          "subtopicId": "alg_induction",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "alg",
+            "minAccuracy": 0.65,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_alg_siruri",
+          "chapterId": "alg",
+          "subject": "math",
+          "title": "Progresii aritmetice și geometrice",
+          "description": "Șiruri particulare, termenul general, suma primilor n termeni.",
+          "tags": ["bac"],
+          "order": 4,
+          "subtopicId": "alg_sequences",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "alg",
+            "minAccuracy": 0.65,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "order": 2,
+      "title": "Bazele Informaticii",
+      "description": "Algoritmi, C++ și structuri de control — fundamentul programării.",
+      "requiredCompletionRatio": 0.75,
+      "milestones": [
+        {
+          "id": "ms_cpp_algoritmi",
+          "chapterId": "cpp_base",
+          "subject": "informatics",
+          "title": "Noțiunea de algoritm și pseudocod",
+          "description": "Algoritmi: caracteristici, tipuri, descriere în pseudocod.",
+          "tags": ["bac"],
+          "order": 1,
+          "subtopicId": "cpp_algo_basics",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "cpp_base",
+            "minAccuracy": 0.65,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_cpp_limbaj",
+          "chapterId": "cpp_base",
+          "subject": "informatics",
+          "title": "Vocabular, tipuri de date, operatori C++",
+          "description": "Identificatori, constante, operatori (aritmetici, logici, relaționali).",
+          "tags": ["bac"],
+          "order": 2,
+          "subtopicId": "cpp_language",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "cpp_base",
+            "minAccuracy": 0.65,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_cpp_citire",
+          "chapterId": "cpp_base",
+          "subject": "informatics",
+          "title": "Citirea, scrierea și structura programului",
+          "description": "Structura unui program C++, intrare/ieșire de date.",
+          "tags": ["bac"],
+          "order": 3,
+          "subtopicId": "cpp_io",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "cpp_base",
+            "minAccuracy": 0.65,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_ctrl_structuri",
+          "chapterId": "control",
+          "subject": "informatics",
+          "title": "Structuri de control (if, while, for)",
+          "description": "Structuri liniare, alternative și repetitive.",
+          "tags": ["bac"],
+          "order": 4,
+          "subtopicId": "ctrl_structures",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "control",
+            "minAccuracy": 0.65,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phase_3",
+      "order": 3,
+      "title": "Funcții, Ecuații și Geometrie",
+      "description": "Funcții, ecuații și numere complexe — esența analizei și algebrei.",
+      "requiredCompletionRatio": 0.75,
+      "milestones": [
+        {
+          "id": "ms_geom_complexe",
+          "chapterId": "geom",
+          "subject": "math",
+          "title": "Mulțimea numerelor complexe",
+          "description": "Forma algebrică, operații, reprezentare geometrică, ecuații.",
+          "tags": ["bac"],
+          "order": 1,
+          "subtopicId": "geom_complex",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "geom",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_func_tipuri",
+          "chapterId": "func",
+          "subject": "math",
+          "title": "Funcții injective, surjective, bijective",
+          "description": "Tipuri de funcții, imagini, compunere.",
+          "tags": ["bac"],
+          "order": 2,
+          "subtopicId": "func_types",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "func",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_func_elementare",
+          "chapterId": "func",
+          "subject": "math",
+          "title": "Funcții elementare (exp, log, putere)",
+          "description": "Funcții polinomiale, exponențiale, logaritmice.",
+          "tags": ["bac"],
+          "order": 3,
+          "subtopicId": "func_elementary",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "func",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_trig_functii",
+          "chapterId": "trig",
+          "subject": "math",
+          "title": "Funcțiile trigonometrice și inversele lor",
+          "description": "Funcții trigonometrice și aplicații.",
+          "tags": ["bac"],
+          "order": 4,
+          "subtopicId": "trig_functions",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "trig",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        },
+        {
+          "id": "ms_func_ecuatii",
+          "chapterId": "func",
+          "subject": "math",
+          "title": "Ecuații iraționale, exponențiale, logaritmice",
+          "description": "Rezolvarea ecuațiilor cu radicali și funcții speciale.",
+          "tags": ["bac"],
+          "order": 5,
+          "subtopicId": "func_equations",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "func",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "beginner"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phase_4",
+      "order": 4,
+      "title": "Structuri de Date și Subprograme",
+      "description": "Tablouri, șiruri, fișiere și subprograme — organizarea datelor complexe.",
+      "requiredCompletionRatio": 0.75,
+      "milestones": [
+        {
+          "id": "ms_arr_tablouri",
+          "chapterId": "arrays",
+          "subject": "informatics",
+          "title": "Tablouri (vectori și matrice)",
+          "description": "Tablouri unidimensionale și bidimensionale, operații.",
+          "tags": ["bac"],
+          "order": 1,
+          "subtopicId": "arr_arrays",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "arrays",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_str_siruri",
+          "chapterId": "strings",
+          "subject": "informatics",
+          "title": "Șiruri de caractere și operații specifice",
+          "description": "Tipul șir de caractere, concatenare, căutare, extragere.",
+          "tags": ["bac"],
+          "order": 2,
+          "subtopicId": "str_strings",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "strings",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_cpp_fisiere",
+          "chapterId": "cpp_base",
+          "subject": "informatics",
+          "title": "Fișiere text și acces",
+          "description": "Tipuri de acces la fișiere, deschidere, citire, scriere.",
+          "tags": ["bac"],
+          "order": 3,
+          "subtopicId": "cpp_files",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "cpp_base",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_func_subprog",
+          "chapterId": "functions",
+          "subject": "informatics",
+          "title": "Proceduri și funcții (declarare, apel)",
+          "description": "Subprograme: declarare, apel, mecanisme de transfer.",
+          "tags": ["bac"],
+          "order": 4,
+          "subtopicId": "func_subprograms",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "functions",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_func_parametri",
+          "chapterId": "functions",
+          "subject": "informatics",
+          "title": "Parametri formali/efectivi, valoare/referință",
+          "description": "Transmiterea parametrilor, variabile globale și locale.",
+          "tags": ["bac"],
+          "order": 5,
+          "subtopicId": "func_params",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "functions",
+            "minAccuracy": 0.7,
+            "minSessions": 1,
+            "requiredLevel": "intermediate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phase_5",
+      "order": 5,
+      "title": "Matematică Avansată Bac + Analiză",
+      "description": "Combinatorică, matrice, limite și derivate — către calculus.",
+      "requiredCompletionRatio": 0.8,
+      "milestones": [
+        {
+          "id": "ms_alg_combinat",
+          "chapterId": "alg",
+          "subject": "math",
+          "title": "Combinatorică: permutări, aranjamente, combinări",
+          "description": "Metode de numărare, Binomul lui Newton.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 1,
+          "subtopicId": "alg_combinatorics",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "alg",
+            "minAccuracy": 0.7,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_alg_matrice",
+          "chapterId": "alg",
+          "subject": "math",
+          "title": "Calcul matriceal și sisteme de ecuații liniare",
+          "description": "Operații cu matrice, determinanți, sisteme liniare.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 2,
+          "subtopicId": "alg_matrices",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "alg",
+            "minAccuracy": 0.7,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_lim_limite",
+          "chapterId": "limits",
+          "subject": "math",
+          "title": "Limite de funcții și nedeterminări",
+          "description": "Limita unei funcții, limite laterale, cazuri exceptate.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 3,
+          "subtopicId": "lim_limits",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "limits",
+            "minAccuracy": 0.7,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_cont_cont",
+          "chapterId": "cont",
+          "subject": "math",
+          "title": "Continuitatea funcțiilor",
+          "description": "Continuitate și operații cu funcții continue.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 4,
+          "subtopicId": "cont_continuity",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "cont",
+            "minAccuracy": 0.7,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_deriv_calc",
+          "chapterId": "deriv",
+          "subject": "math",
+          "title": "Calculul derivatelor de ord. I și II",
+          "description": "Derivata unei funcții, reguli de derivare.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 5,
+          "subtopicId": "deriv_derivatives",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "deriv",
+            "minAccuracy": 0.7,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_deriv_studiu",
+          "chapterId": "deriv",
+          "subject": "math",
+          "title": "Studiul funcțiilor cu derivate (L'Hospital, extrem)",
+          "description": "Monotonie, extrema, concavitate, regulile L'Hospital.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 6,
+          "subtopicId": "deriv_study",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "deriv",
+            "minAccuracy": 0.7,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phase_6",
+      "order": 6,
+      "title": "Algoritmică Avansată",
+      "description": "Sortare, recursivitate, backtracking — rezolvarea problemelor complexe.",
+      "requiredCompletionRatio": 0.8,
+      "milestones": [
+        {
+          "id": "ms_sort_algoritmi",
+          "chapterId": "sort_search",
+          "subject": "informatics",
+          "title": "Algoritmi elementari: cifre, prime, Euclid, Fibonacci",
+          "description": "Prelucrarea cifrelor, numere prime, CMMDC, progresii.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 1,
+          "subtopicId": "sort_elementary",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "sort_search",
+            "minAccuracy": 0.75,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_sort_ordonare",
+          "chapterId": "sort_search",
+          "subject": "informatics",
+          "title": "Sortare (bule, inserție, selecție, numărare)",
+          "description": "Metode de ordonare și interclasare.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 2,
+          "subtopicId": "sort_sorting",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "sort_search",
+            "minAccuracy": 0.75,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_sort_cautare",
+          "chapterId": "sort_search",
+          "subject": "informatics",
+          "title": "Căutare (secvențială, binară) și interclasare",
+          "description": "Metode de căutare în date ordonate.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 3,
+          "subtopicId": "sort_search_methods",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "sort_search",
+            "minAccuracy": 0.75,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_sort_complex",
+          "chapterId": "sort_search",
+          "subject": "informatics",
+          "title": "Analiza complexității algoritmilor",
+          "description": "Analiză durată execuție și spațiu utilizat.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 4,
+          "subtopicId": "sort_complexity",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "sort_search",
+            "minAccuracy": 0.75,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_rec_recursiv",
+          "chapterId": "recursion",
+          "subject": "informatics",
+          "title": "Recursivitate: prezentare și implementare",
+          "description": "Funcții recursive și mecanismul stivei.",
+          "tags": ["bac", "fmi", "upb"],
+          "order": 5,
+          "subtopicId": "rec_recursion",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "recursion",
+            "minAccuracy": 0.75,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_algo_backtracking",
+          "chapterId": "algorithms",
+          "subject": "informatics",
+          "title": "Metoda Backtracking (iterativ/recursiv)",
+          "description": "Metoda backtracking și aplicații.",
+          "tags": ["fmi", "upb"],
+          "order": 6,
+          "subtopicId": "algo_backtracking",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "algorithms",
+            "minAccuracy": 0.75,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        },
+        {
+          "id": "ms_algo_combinat",
+          "chapterId": "algorithms",
+          "subject": "informatics",
+          "title": "Generarea elementelor combinatoriale",
+          "description": "Permutări, aranjamente, combinări, produs cartezian.",
+          "tags": ["fmi", "upb"],
+          "order": 7,
+          "subtopicId": "algo_combinatorial",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "algorithms",
+            "minAccuracy": 0.75,
+            "minSessions": 2,
+            "requiredLevel": "intermediate"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phase_7",
+      "order": 7,
+      "title": "Admitere Politehnica: Nivel Maxim",
+      "description": "Structuri algebrice, integrale, grafuri — esența analizei superioare.",
+      "requiredCompletionRatio": 1.0,
+      "milestones": [
+        {
+          "id": "ms_adm_structuri",
+          "chapterId": "admmix",
+          "subject": "math",
+          "title": "Structuri algebrice: grupuri, inele, corpuri",
+          "description": "Legi de compoziție, grupuri și subgrupuri, morfisme.",
+          "tags": ["fmi", "upb"],
+          "order": 1,
+          "subtopicId": "adm_algebra",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "admmix",
+            "minAccuracy": 0.8,
+            "minSessions": 2,
+            "requiredLevel": "advanced"
+          }
+        },
+        {
+          "id": "ms_adm_polinoame",
+          "chapterId": "admmix",
+          "subject": "math",
+          "title": "Inele de polinoame: teorema împărțirii, rădăcini",
+          "description": "Operații cu polinoame, descompunere, Viète.",
+          "tags": ["fmi", "upb"],
+          "order": 2,
+          "subtopicId": "adm_polynomials",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "admmix",
+            "minAccuracy": 0.8,
+            "minSessions": 2,
+            "requiredLevel": "advanced"
+          }
+        },
+        {
+          "id": "ms_integ_primitive",
+          "chapterId": "integ",
+          "subject": "math",
+          "title": "Primitive și integrala nedefinită",
+          "description": "Primitive uzuale și liniaritate integralei.",
+          "tags": ["fmi", "upb"],
+          "order": 3,
+          "subtopicId": "integ_primitives",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "integ",
+            "minAccuracy": 0.8,
+            "minSessions": 2,
+            "requiredLevel": "advanced"
+          }
+        },
+        {
+          "id": "ms_integ_definita",
+          "chapterId": "integ",
+          "subject": "math",
+          "title": "Integrala definită și metode de calcul",
+          "description": "Integrala definită, prin părți, schimbare variabilă.",
+          "tags": ["fmi", "upb"],
+          "order": 4,
+          "subtopicId": "integ_definite",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "integ",
+            "minAccuracy": 0.8,
+            "minSessions": 2,
+            "requiredLevel": "advanced"
+          }
+        },
+        {
+          "id": "ms_integ_aplicatii",
+          "chapterId": "integ",
+          "subject": "math",
+          "title": "Aplicații: arie, volum corp de rotație",
+          "description": "Calcul arie și volum cu integrale.",
+          "tags": ["fmi", "upb"],
+          "order": 5,
+          "subtopicId": "integ_applications",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "integ",
+            "minAccuracy": 0.8,
+            "minSessions": 2,
+            "requiredLevel": "advanced"
+          }
+        },
+        {
+          "id": "ms_algo_grafuri_ne",
+          "chapterId": "algorithms",
+          "subject": "informatics",
+          "title": "Grafuri neorientate: terminologie, reprezentare",
+          "description": "Nod, muchie, proprieți, matrice adiacență, liste.",
+          "tags": ["fmi", "upb"],
+          "order": 6,
+          "subtopicId": "algo_graphs_undirected",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "algorithms",
+            "minAccuracy": 0.8,
+            "minSessions": 2,
+            "requiredLevel": "advanced"
+          }
+        },
+        {
+          "id": "ms_algo_grafuri_or",
+          "chapterId": "algorithms",
+          "subject": "informatics",
+          "title": "Grafuri orientate: terminologie, tare conexitate",
+          "description": "Arce, grad intern/extern, tare conexitate.",
+          "tags": ["fmi", "upb"],
+          "order": 7,
+          "subtopicId": "algo_graphs_directed",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "algorithms",
+            "minAccuracy": 0.8,
+            "minSessions": 2,
+            "requiredLevel": "advanced"
+          }
+        },
+        {
+          "id": "ms_algo_arbori",
+          "chapterId": "algorithms",
+          "subject": "informatics",
+          "title": "Arbori: terminologie și reprezentare",
+          "description": "Rădăcină, fii, părinți, reprezentare în memorie.",
+          "tags": ["fmi", "upb"],
+          "order": 8,
+          "subtopicId": "algo_trees",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "algorithms",
+            "minAccuracy": 0.8,
+            "minSessions": 2,
+            "requiredLevel": "advanced"
+          }
+        },
+        {
+          "id": "ms_adm_mix",
+          "chapterId": "admmix",
+          "subject": "math",
+          "title": "Probleme mixte de admitere Politehnica",
+          "description": "Probleme complexe combinând concepte din faze anterioare.",
+          "tags": ["fmi", "upb"],
+          "order": 9,
+          "subtopicId": "adm_mixed",
+          "autoComplete": {
+            "type": "session_accuracy",
+            "chapterId": "admmix",
+            "minAccuracy": 0.8,
+            "minSessions": 2,
+            "requiredLevel": "advanced"
+          }
+        }
+      ]
+    }
+  ]
+}

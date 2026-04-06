@@ -8,6 +8,7 @@ import { PlacementIntro } from "./components/placement/PlacementIntro.jsx";
 import { PlacementFlow } from "./components/placement/PlacementFlow.jsx";
 import { PlacementResults } from "./components/placement/PlacementResults.jsx";
 import { SkillTree } from "./components/skillTree/SkillTree.jsx";
+import { RoadmapView } from "./components/roadmap/RoadmapView.jsx";
 import { SessionRunner } from "./components/session/SessionRunner.jsx";
 import { CelebrationOverlay } from "./components/gamification/CelebrationOverlay.jsx";
 import { Statistics } from "./components/legacy/Statistics.jsx";
@@ -130,6 +131,11 @@ export default function App() {
                   </div>
                 )}
                 <SkillTree state={state} onStartLesson={handleStartLesson} />
+              </div>
+            )}
+            {activeTab === "roadmap" && (
+              <div className="content-col">
+                <RoadmapView state={state} dispatch={dispatch} onStartLesson={handleStartLesson} />
               </div>
             )}
             {activeTab === "statistics" && (

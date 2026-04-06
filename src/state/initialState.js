@@ -75,7 +75,11 @@ export function makeInitialState() {
       { day: 1, name: "Test matematica Bac M1 + corectare ghidata", status: "pending" },
       { day: 2, name: "Test informatica Bac/admitere in C++ + corectare ghidata", status: "pending" },
       { day: 3, name: "Mini-proba de admitere mixta + profil personalizat", status: "pending" }
-    ]
+    ],
+    roadmap: {
+      milestones: {},
+      manualOverrides: []
+    }
   };
 }
 

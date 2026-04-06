@@ -5,6 +5,7 @@ import { migrateState } from "../state/migrations.js";
 import { updateSpacedRep } from "../utils/spacedRepetition.js";
 import { calculateSessionXP } from "../utils/xp.js";
 import { todayISO } from "../utils/dateHelpers.js";
+import { evaluateAutoCompletions } from "../utils/roadmapHelpers.js";
 
 export const ACTIONS = {
   COMPLETE_PLACEMENT: "COMPLETE_PLACEMENT",
@@ -17,6 +18,7 @@ export const ACTIONS = {
   UPDATE_MISTAKE: "UPDATE_MISTAKE",
   REMOVE_MISTAKE: "REMOVE_MISTAKE",
   SET_SELECTED_DAY: "SET_SELECTED_DAY",
+  TOGGLE_MILESTONE: "TOGGLE_MILESTONE",
   RESET: "RESET"
 };
 
@@ -215,8 +217,25 @@ function reducer(state, action) {
         newState = unlockNextChapter(newState, chapterId);
       }
 
+      // Auto-complete eligible roadmap milestones based on session performance
+      const eligibleMilestones = evaluateAutoCompletions(newState, chapterId, accuracy);
+      let newMilestones = { ...newState.roadmap.milestones };
+      for (const milestoneId of eligibleMilestones) {
+        if (!newMilestones[milestoneId]?.completed) {
+          newMilestones[milestoneId] = {
+            completed: true,
+            completedAt: today,
+            autoCompleted: true
+          };
+        }
+      }
+
       return {
         ...newState,
+        roadmap: {
+          ...newState.roadmap,
+          milestones: newMilestones
+        },
         gamification: newGamification,
         questionHistory: newHistory,
         session: { ...IDLE_SESSION }
@@ -283,6 +302,43 @@ function reducer(state, action) {
 
     case ACTIONS.SET_SELECTED_DAY: {
       return { ...state, selectedDay: action.day };
+    }
+
+    case ACTIONS.TOGGLE_MILESTONE: {
+      const { milestoneId } = action;
+      const today = todayISO();
+      const current = state.roadmap.milestones[milestoneId];
+      const isCompleted = current?.completed ?? false;
+      const newCompleted = !isCompleted;
+
+      // Track manual overrides to prevent auto-recheck
+      const newOverrides = [...(state.roadmap.manualOverrides ?? [])];
+      if (newCompleted) {
+        // Manually checking: remove from overrides if present
+        const idx = newOverrides.indexOf(milestoneId);
+        if (idx >= 0) newOverrides.splice(idx, 1);
+      } else {
+        // Manually unchecking: add to overrides to prevent auto-recheck
+        if (!newOverrides.includes(milestoneId)) {
+          newOverrides.push(milestoneId);
+        }
+      }
+
+      return {
+        ...state,
+        roadmap: {
+          ...state.roadmap,
+          milestones: {
+            ...state.roadmap.milestones,
+            [milestoneId]: {
+              completed: newCompleted,
+              completedAt: newCompleted ? today : null,
+              autoCompleted: false
+            }
+          },
+          manualOverrides: newOverrides
+        }
+      };
     }
 
     case ACTIONS.RESET: {
