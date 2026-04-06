@@ -1,0 +1,17 @@
+{
+  "student_name": "Elev",
+  "language": "ro",
+  "target_cycle": "2026",
+  "daily_hours": "2-3",
+  "days_per_week": 7,
+  "primary_informatics_track": "C++ algoritmic",
+  "targets": {
+    "bac_m1": 10,
+    "fmi_entrance": 9,
+    "upb_acs_entrance": 9
+  },
+  "notes": [
+    "Saptamana 1 este rezervata diagnosticului complet.",
+    "UPB ramane configurat implicit pentru nivel ACS/CTI/IS."
+  ]
+}

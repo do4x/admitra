@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "language": "ro",
+    "targets": {
+      "bac_m1": 10,
+      "fmi_entrance": 9,
+      "upb_acs_entrance": 9
+    },
+    "study_defaults": {
+      "hours_per_day": "2-3",
+      "days_per_week": 7
+    },
+    "sources": [
+      {
+        "label": "MEC Bacalaureat",
+        "url": "https://www.edu.ro/bacalaureat"
+      },
+      {
+        "label": "UB FMI Admitere 2026",
+        "url": "https://fmi.unibuc.ro/admitere-licenta-iulie-2026/"
+      },
+      {
+        "label": "UPB Admitere",
+        "url": "https://admitere.pub.ro/"
+      }
+    ]
+  },
+  "math_topics": [
+    {
+      "id": "alg",
+      "name": "Algebra si calcule algebrice",
+      "weight": 1.0,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Exercitii de calcul algebric, factorizari, fractii si expresii rationale.",
+        "Probleme pe ecuatii, inecuatii si sisteme cu accent pe metoda aleasa.",
+        "Mini-set mixt de simplificari si verificare a conditiilor de existenta."
+      ]
+    },
+    {
+      "id": "func",
+      "name": "Functii si grafice",
+      "weight": 1.0,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Studiul functiei: domeniu, monotonia, injectivitate, compunere, inversa.",
+        "Interpretare grafica si exercitii de parametru.",
+        "Probleme scurte de identificare a proprietatilor functiilor."
+      ]
+    },
+    {
+      "id": "trig",
+      "name": "Trigonometrie",
+      "weight": 0.8,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Transformari trigonometrice, identitati si ecuatii trigonometrice.",
+        "Aplicatii pe cercul trigonometric si semnele functiilor.",
+        "Probleme de admitere cu reducere la identitati standard."
+      ]
+    },
+    {
+      "id": "geom",
+      "name": "Geometrie analitica, vectori si numere complexe",
+      "weight": 0.9,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Vectori, coliniaritate, produse, ecuatii de dreapta si cerc.",
+        "Probleme cu numere complexe in forma algebrica si trigonometrica.",
+        "Aplicatii pe interpretare geometrica si argument logic."
+      ]
+    },
+    {
+      "id": "limits",
+      "name": "Limite",
+      "weight": 1.0,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Limite standard, operatii cu infinit si forme nedeterminate.",
+        "Probleme cu siruri, functii si schimbari de variabila.",
+        "Set cronometrat de limite de tip Bac plus 1 problema de admitere."
+      ]
+    },
+    {
+      "id": "cont",
+      "name": "Continuitate",
+      "weight": 0.8,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Verificarea continuitatii si studiul functiilor definite pe bucati.",
+        "Aplicatii pe teoreme fundamentale si parametri.",
+        "Probleme scurte de argumentare riguroasa."
+      ]
+    },
+    {
+      "id": "deriv",
+      "name": "Derivate si studiu de functie",
+      "weight": 1.2,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Calcul de derivate, tangente, extreme, convexitate, asimptote.",
+        "Probleme de optimizare si studiu complet de functie.",
+        "Set de viteza pe scheme clasice de Bac si admitere."
+      ]
+    },
+    {
+      "id": "integ",
+      "name": "Integrale",
+      "weight": 1.0,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Primitive uzuale, schimbari de variabila, integrare prin parti.",
+        "Calcul de arii si interpretari geometrice.",
+        "Probleme mixte cu alegerea tehnicii potrivite."
+      ]
+    },
+    {
+      "id": "admmix",
+      "name": "Probleme mixte de admitere",
+      "weight": 1.3,
+      "tags": ["fmi", "upb"],
+      "exercise_bank": [
+        "Probleme neghidate care combina algebric, analiza si argument logic.",
+        "Mini-simulare admitere cu 2 exercitii medii si 1 exercitiu greu.",
+        "Probleme cu selectie de metoda si justificare completa."
+      ]
+    }
+  ],
+  "informatics_topics": [
+    {
+      "id": "cpp_base",
+      "name": "Bazele C++",
+      "weight": 0.8,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Tipuri de date, operatori, citire/scriere, structura de baza a programului.",
+        "Predictia iesirii pentru fragmente scurte.",
+        "Corectare de cod cu erori simple de sintaxa si logica."
+      ]
+    },
+    {
+      "id": "control",
+      "name": "Structuri de control",
+      "weight": 0.9,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "if, switch, for, while, do-while in probleme scurte.",
+        "Transcriere algoritm din enunt in C++ clar si corect.",
+        "Probleme cu conditii compuse si trasee de executie."
+      ]
+    },
+    {
+      "id": "arrays",
+      "name": "Tablouri si matrici",
+      "weight": 1.1,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Prelucrari standard pe vectori si matrici.",
+        "Probleme de selectie, frecventa, transformare si traversare.",
+        "Set de exercitii cu atentie la indici si complexitate."
+      ]
+    },
+    {
+      "id": "strings",
+      "name": "Siruri de caractere",
+      "weight": 0.8,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Prelucrari de siruri in C/C++: cautare, modificare, tokenizare.",
+        "Probleme pe validare si construire de siruri.",
+        "Exercitii de evitare a greselilor de indexare."
+      ]
+    },
+    {
+      "id": "functions",
+      "name": "Functii si modularizare",
+      "weight": 0.9,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Definire, apel, parametri, return, refolosire de cod.",
+        "Refactorizarea unei solutii monolitice in functii.",
+        "Probleme scurte pe proiectare de semnatura si responsabilitate."
+      ]
+    },
+    {
+      "id": "recursion",
+      "name": "Recursivitate",
+      "weight": 0.9,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Urmarirea apelurilor recursive si scriere de functii recursive simple.",
+        "Transformarea iterativ-recursiv si invers.",
+        "Probleme pe corectitudine si terminare."
+      ]
+    },
+    {
+      "id": "sort_search",
+      "name": "Sortari si cautari",
+      "weight": 1.0,
+      "tags": ["bac", "fmi", "upb"],
+      "exercise_bank": [
+        "Sortari elementare, cautare liniara si binara.",
+        "Alegerea algoritmului potrivit in functie de date.",
+        "Probleme de analiza a complexitatii si trasare."
+      ]
+    },
+    {
+      "id": "algorithms",
+      "name": "Tehnici algoritmice de admitere",
+      "weight": 1.3,
+      "tags": ["fmi", "upb"],
+      "exercise_bank": [
+        "Probleme neghidate de constructie algoritmica in C++.",
+        "Set mixt cu greedy, simulare, prelucrari eficiente si observatii.",
+        "Probleme de dificultate mare cu accent pe justificarea ideii."
+      ]
+    }
+  ],
+  "weekly_rhythm": [
+    "Ziua 1: matematica fundament + informatica fundament",
+    "Ziua 2: matematica probleme grele + informatica probleme grele",
+    "Ziua 3: antrenament cronometrat mixt",
+    "Ziua 4: reparatie pe 2 capitole slabe",
+    "Ziua 5: admitere-focused, dificultate mare",
+    "Ziua 6: Bac-focused, viteza si acuratete",
+    "Ziua 7: evaluare saptamanala completa + recalibrare"
+  ],
+  "error_labels": [
+    "teorie",
+    "executie",
+    "viteza",
+    "atentie",
+    "strategie"
+  ]
+}

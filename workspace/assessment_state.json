@@ -1,0 +1,338 @@
+{
+  "generated_on": "2026-04-03",
+  "phase": "diagnostic + fundament",
+  "assessment_week": 1,
+  "diagnostic_days": [
+    {
+      "day": 1,
+      "name": "Test matematica Bac M1 + corectare ghidata",
+      "status": "pending"
+    },
+    {
+      "day": 2,
+      "name": "Test informatica Bac/admitere in C++ + corectare ghidata",
+      "status": "pending"
+    },
+    {
+      "day": 3,
+      "name": "Mini-proba de admitere mixta + profil personalizat",
+      "status": "pending"
+    }
+  ],
+  "chapters": {
+    "math": [
+      {
+        "subject": "math",
+        "id": "alg",
+        "name": "Algebra si calcule algebrice",
+        "weight": 1.0,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "math",
+        "id": "func",
+        "name": "Functii si grafice",
+        "weight": 1.0,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "math",
+        "id": "trig",
+        "name": "Trigonometrie",
+        "weight": 0.8,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "math",
+        "id": "geom",
+        "name": "Geometrie analitica, vectori si numere complexe",
+        "weight": 0.9,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "math",
+        "id": "limits",
+        "name": "Limite",
+        "weight": 1.0,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "math",
+        "id": "cont",
+        "name": "Continuitate",
+        "weight": 0.8,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "math",
+        "id": "deriv",
+        "name": "Derivate si studiu de functie",
+        "weight": 1.2,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "math",
+        "id": "integ",
+        "name": "Integrale",
+        "weight": 1.0,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "math",
+        "id": "admmix",
+        "name": "Probleme mixte de admitere",
+        "weight": 1.3,
+        "tags": [
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      }
+    ],
+    "informatics": [
+      {
+        "subject": "informatics",
+        "id": "cpp_base",
+        "name": "Bazele C++",
+        "weight": 0.8,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "informatics",
+        "id": "control",
+        "name": "Structuri de control",
+        "weight": 0.9,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "informatics",
+        "id": "arrays",
+        "name": "Tablouri si matrici",
+        "weight": 1.1,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "informatics",
+        "id": "strings",
+        "name": "Siruri de caractere",
+        "weight": 0.8,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "informatics",
+        "id": "functions",
+        "name": "Functii si modularizare",
+        "weight": 0.9,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "informatics",
+        "id": "recursion",
+        "name": "Recursivitate",
+        "weight": 0.9,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "informatics",
+        "id": "sort_search",
+        "name": "Sortari si cautari",
+        "weight": 1.0,
+        "tags": [
+          "bac",
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      },
+      {
+        "subject": "informatics",
+        "id": "algorithms",
+        "name": "Tehnici algoritmice de admitere",
+        "weight": 1.3,
+        "tags": [
+          "fmi",
+          "upb"
+        ],
+        "knowledge": 0,
+        "speed": 0,
+        "confidence": 0,
+        "last_percent": 0.0,
+        "streak_above_85": 0,
+        "priority": "high",
+        "notes": ""
+      }
+    ]
+  },
+  "history": [],
+  "estimated_scores": {
+    "bac_m1": 0.0,
+    "fmi_entrance": 0.0,
+    "upb_acs_entrance": 0.0
+  }
+}
