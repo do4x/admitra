@@ -1,3 +1,5 @@
+import { MathText } from "../ui/MathText.jsx";
+
 export function TrueFalseQ({ question, onAnswer, disabled, selectedAnswer, isCorrect }) {
   const renderBtn = (value, label) => {
     let cls = "tf-btn";
@@ -20,7 +22,7 @@ export function TrueFalseQ({ question, onAnswer, disabled, selectedAnswer, isCor
 
   return (
     <div className="q-prompt-wrap">
-      <p className="q-prompt">{question.statement}</p>
+      <MathText as="p" className="q-prompt">{question.statement}</MathText>
       <div className="tf-grid">
         {renderBtn(true, "Adevarat")}
         {renderBtn(false, "Fals")}

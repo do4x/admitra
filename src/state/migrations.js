@@ -16,11 +16,15 @@ export function migrateState(raw) {
   const version = parsed.stateVersion ?? 1;
 
   if (version < 2) {
-    return migrateV1toV2(parsed);
+    parsed = migrateV1toV2(parsed);
   }
 
-  if (version < 3) {
-    return migrateV2toV3(parsed);
+  if ((parsed.stateVersion ?? 1) < 3) {
+    parsed = migrateV2toV3(parsed);
+  }
+
+  if ((parsed.stateVersion ?? 1) < 4) {
+    parsed = migrateV3toV4(parsed);
   }
 
   return parsed;
@@ -44,7 +48,7 @@ function migrateV1toV2(v1) {
   const fresh = makeInitialState();
 
   return {
-    stateVersion: STATE_VERSION,
+    stateVersion: 2,
     profile: v1.profile ?? fresh.profile,
     placement: {
       completed: false, // force placement even for existing users
@@ -67,7 +71,8 @@ function migrateV2toV3(v2) {
   const fresh = makeInitialState();
 
   return {
-    stateVersion: STATE_VERSION,
+    ...v2,
+    stateVersion: 3,
     profile: v2.profile ?? fresh.profile,
     placement: v2.placement ?? fresh.placement,
     chapters: v2.chapters ?? fresh.chapters,
@@ -78,5 +83,17 @@ function migrateV2toV3(v2) {
     selectedDay: v2.selectedDay ?? fresh.selectedDay,
     diagnosticDays: v2.diagnosticDays ?? fresh.diagnosticDays,
     roadmap: fresh.roadmap
+  };
+}
+
+function migrateV3toV4(v3) {
+  return {
+    ...v3,
+    stateVersion: STATE_VERSION,
+    mistakes: (v3.mistakes ?? []).map((m) => ({
+      problemImage: null,
+      solutionImage: null,
+      ...m
+    }))
   };
 }

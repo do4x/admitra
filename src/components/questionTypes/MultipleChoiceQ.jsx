@@ -1,9 +1,11 @@
+import { MathText } from "../ui/MathText.jsx";
+
 const LABELS = ["A", "B", "C", "D"];
 
 export function MultipleChoiceQ({ question, onAnswer, disabled, selectedAnswer, isCorrect }) {
   return (
     <div className="q-prompt-wrap">
-      <p className="q-prompt">{question.prompt}</p>
+      <MathText as="p" className="q-prompt">{question.prompt}</MathText>
       <div className="options-grid">
         {question.options.map((opt, idx) => {
           let cls = "option-btn";
@@ -20,7 +22,7 @@ export function MultipleChoiceQ({ question, onAnswer, disabled, selectedAnswer, 
               disabled={disabled}
             >
               <span className="option-label">{LABELS[idx]}</span>
-              <span className="option-text">{opt}</span>
+              <MathText as="span" className="option-text">{opt}</MathText>
             </button>
           );
         })}

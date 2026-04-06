@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MathText } from "../ui/MathText.jsx";
 
 export function CodeTraceQ({ question, onAnswer, disabled, isCorrect }) {
   const [input, setInput] = useState("");
@@ -10,7 +11,7 @@ export function CodeTraceQ({ question, onAnswer, disabled, isCorrect }) {
 
   return (
     <div className="q-prompt-wrap">
-      <p className="q-prompt">{question.prompt}</p>
+      <MathText as="p" className="q-prompt">{question.prompt}</MathText>
       <pre className="code-block"><code>{question.code}</code></pre>
       <div className="fill-row">
         <input

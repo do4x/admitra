@@ -267,29 +267,32 @@ function reducer(state, action) {
     }
 
     case ACTIONS.ADD_MISTAKE: {
+      const base = {
+        id: crypto.randomUUID(),
+        date: new Date().toISOString().slice(0, 10),
+        discipline: "Matematica",
+        chapter: "",
+        type: "teorie",
+        summary: "",
+        correction: "",
+        problemImage: null,
+        solutionImage: null
+      };
+      const next = action.mistake ? { ...base, ...action.mistake, id: base.id } : base;
       return {
         ...state,
-        mistakes: [
-          {
-            id: crypto.randomUUID(),
-            date: new Date().toISOString().slice(0, 10),
-            discipline: "Matematica",
-            chapter: "",
-            type: "teorie",
-            summary: "",
-            correction: ""
-          },
-          ...state.mistakes
-        ]
+        mistakes: [next, ...state.mistakes]
       };
     }
 
     case ACTIONS.UPDATE_MISTAKE: {
       return {
         ...state,
-        mistakes: state.mistakes.map((m) =>
-          m.id === action.id ? { ...m, [action.field]: action.value } : m
-        )
+        mistakes: state.mistakes.map((m) => {
+          if (m.id !== action.id) return m;
+          if (action.patch) return { ...m, ...action.patch };
+          return { ...m, [action.field]: action.value };
+        })
       };
     }
 
