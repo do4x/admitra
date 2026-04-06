@@ -14,7 +14,6 @@ import { CelebrationOverlay } from "./components/gamification/CelebrationOverlay
 import { Statistics } from "./components/legacy/Statistics.jsx";
 import { AssessmentMatrix } from "./components/legacy/AssessmentMatrix.jsx";
 import { WeeklyCoach } from "./components/legacy/WeeklyCoach.jsx";
-import { DailyBrief } from "./components/legacy/DailyBrief.jsx";
 import { MistakeLog } from "./components/legacy/MistakeLog.jsx";
 
 export default function App() {
@@ -151,12 +150,7 @@ export default function App() {
                 <WeeklyCoach state={state} />
               </div>
             )}
-            {activeTab === "daily" && (
-              <div className="content-col">
-                <DailyBrief state={state} dispatch={dispatch} />
-              </div>
-            )}
-            {activeTab === "mistakes" && (
+{activeTab === "mistakes" && (
               <div className="content-col">
                 <MistakeLog state={state} dispatch={dispatch} />
               </div>

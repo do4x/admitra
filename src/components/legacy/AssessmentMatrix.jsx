@@ -1,6 +1,9 @@
 import blueprint from "../../../data/exam_blueprint.json";
 import { chapterPercent, chapterColor } from "../../utils/chapterScoring.js";
 import { ACTIONS } from "../../hooks/useAppState.js";
+import { CustomSelect } from "../ui/CustomSelect.jsx";
+
+const SCORE_OPTIONS = [0, 1, 2, 3, 4].map((v) => ({ value: v, label: String(v) }));
 
 function ScoreTable({ title, subject, chapters, dispatch }) {
   return (
@@ -22,23 +25,21 @@ function ScoreTable({ title, subject, chapters, dispatch }) {
                 <span>{percent.toFixed(2)}%</span>
               </div>
               {["knowledge", "speed", "confidence"].map((field) => (
-                <select
+                <CustomSelect
                   key={field}
                   value={chapter[field]}
-                  onChange={(e) =>
+                  options={SCORE_OPTIONS}
+                  onChange={(val) =>
                     dispatch({
                       type: ACTIONS.UPDATE_CHAPTER_SCORE,
                       subject,
                       chapterId: chapter.id,
                       field,
-                      value: e.target.value
+                      value: val
                     })
                   }
-                >
-                  {[0, 1, 2, 3, 4].map((v) => (
-                    <option key={v} value={v}>{v}</option>
-                  ))}
-                </select>
+                  compact
+                />
               ))}
               <span className={`status-badge ${chapterColor(percent)}`}>{chapterColor(percent)}</span>
               <textarea

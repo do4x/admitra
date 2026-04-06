@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { buildMetrics, chapterPercent, chapterColor } from "../../state/selectors.js";
 import { ACTIONS } from "../../hooks/useAppState.js";
+import { CustomSelect } from "../ui/CustomSelect.jsx";
 
 const weekPattern = [
   "Ziua 1: matematica fundament + informatica fundament",
@@ -94,13 +95,14 @@ export function Statistics({ state, dispatch }) {
                   <span className="day-badge">Ziua {entry.day}</span>
                   <p>{entry.name}</p>
                 </div>
-                <select
+                <CustomSelect
                   value={entry.status}
-                  onChange={(e) => dispatch({ type: ACTIONS.UPDATE_DIAGNOSTIC, day: entry.day, status: e.target.value })}
-                >
-                  <option value="pending">In asteptare</option>
-                  <option value="completed">Finalizata</option>
-                </select>
+                  options={[
+                    { value: "pending", label: "In asteptare" },
+                    { value: "completed", label: "Finalizata" }
+                  ]}
+                  onChange={(val) => dispatch({ type: ACTIONS.UPDATE_DIAGNOSTIC, day: entry.day, status: val })}
+                />
               </div>
             ))}
           </div>

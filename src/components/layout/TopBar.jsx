@@ -10,7 +10,6 @@ export function TopBar({ gamification, activeTab, onTabChange, onReset }) {
     ["roadmap", "Parcurs"],
     ["statistics", "Statistici"],
     ["weekly", "Planner"],
-    ["daily", "Brief Zilnic"],
     ["mistakes", "Greseli"]
   ];
 
@@ -18,7 +17,7 @@ export function TopBar({ gamification, activeTab, onTabChange, onReset }) {
     <nav className="top-nav">
       <div className="nav-brand">
         <span className="brand-dot" />
-        <span className="brand-name">Bac Study Coach</span>
+        <span className="brand-name">Admitra</span>
       </div>
 
       <div className="nav-tabs">

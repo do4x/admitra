@@ -546,6 +546,110 @@ textarea {
   border-color: rgba(255, 180, 81, 0.4);
 }
 
+/* ─── Custom Select ─── */
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-select.compact {
+  width: auto;
+  min-width: 56px;
+}
+
+.custom-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 0.8rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f8f7ef;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: border-color 140ms ease;
+  text-align: left;
+}
+
+.custom-select.compact .custom-select-trigger {
+  padding: 0.5rem 0.6rem;
+  font-size: 0.84rem;
+}
+
+.custom-select-trigger:hover,
+.custom-select-trigger:focus {
+  border-color: rgba(255, 180, 81, 0.4);
+  outline: none;
+}
+
+.custom-select-chevron {
+  font-size: 0.7rem;
+  opacity: 0.5;
+  transition: transform 180ms ease;
+}
+
+.custom-select-chevron.open {
+  transform: rotate(180deg);
+}
+
+.custom-select-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  background: rgba(8, 20, 28, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  padding: 4px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.custom-select.compact .custom-select-dropdown {
+  min-width: 56px;
+}
+
+.custom-select-option {
+  display: block;
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(248, 247, 239, 0.7);
+  font-size: 0.88rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 100ms ease, color 100ms ease;
+}
+
+.custom-select.compact .custom-select-option {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.84rem;
+  text-align: center;
+}
+
+.custom-select-option:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #f8f7ef;
+}
+
+.custom-select-option.selected {
+  background: rgba(255, 180, 81, 0.15);
+  color: var(--warm);
+}
+
 /* ─── Weekly summary ─── */
 
 .weekly-layout {
