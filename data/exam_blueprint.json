@@ -216,6 +216,292 @@
       ]
     }
   ],
+  "lessons": {
+    "math": [
+      {
+        "id": "lesson_multimi_reale",
+        "name": "Mulțimea numerelor reale",
+        "theory": "",
+        "sections": [
+          { "id": "mr_1", "name": "Operații algebrice cu numere reale", "theory": "" },
+          { "id": "mr_2", "name": "Ordonarea numerelor reale", "theory": "" },
+          { "id": "mr_3", "name": "Modulul unui număr real", "theory": "" },
+          { "id": "mr_4", "name": "Puteri și aproximări raționale", "theory": "" },
+          { "id": "mr_5", "name": "Partea întreagă și partea fracționară", "theory": "" },
+          { "id": "mr_6", "name": "Operații cu intervale de numere reale", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_logica",
+        "name": "Elemente de logică matematică",
+        "theory": "",
+        "sections": [
+          { "id": "log_1", "name": "Operații logice elementare (negația, conjuncția, disjuncția, implicația, echivalența)", "theory": "" },
+          { "id": "log_2", "name": "Operații cu mulțimi (complementara, intersecția, reuniunea, incluziunea, egalitatea)", "theory": "" },
+          { "id": "log_3", "name": "Raționament prin reducere la absurd", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_inductie",
+        "name": "Inducția matematică",
+        "theory": "",
+        "sections": [
+          { "id": "ind_1", "name": "Principiul inducției matematice", "theory": "" },
+          { "id": "ind_2", "name": "Aplicații clasice", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_siruri",
+        "name": "Șiruri particulare",
+        "theory": "",
+        "sections": [
+          { "id": "sir_1", "name": "Progresii aritmetice", "theory": "" },
+          { "id": "sir_2", "name": "Progresii geometrice", "theory": "" },
+          { "id": "sir_3", "name": "Termenul general și suma primilor n termeni", "theory": "" },
+          { "id": "sir_4", "name": "Condiția ca n numere să fie în progresie", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_complexe",
+        "name": "Mulțimea numerelor complexe",
+        "theory": "",
+        "sections": [
+          { "id": "cpl_1", "name": "Forma algebrică, operații, conjugat, modul", "theory": "" },
+          { "id": "cpl_2", "name": "Reprezentarea în plan, distanța dintre puncte", "theory": "" },
+          { "id": "cpl_3", "name": "Interpretarea geometrică a operațiilor", "theory": "" },
+          { "id": "cpl_4", "name": "Ecuații de gradul II cu coeficienți reali în C", "theory": "" },
+          { "id": "cpl_5", "name": "Ecuații binome și bipătrate", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_functii",
+        "name": "Funcții",
+        "theory": "",
+        "sections": [
+          { "id": "fn_1", "name": "Funcții injective, surjective, bijective", "theory": "" },
+          { "id": "fn_2", "name": "Imaginea unei funcții, compunerea funcțiilor", "theory": "" },
+          { "id": "fn_3", "name": "Funcții inversabile", "theory": "" },
+          { "id": "fn_4", "name": "Funcția de gradul I și de gradul II", "theory": "" },
+          { "id": "fn_5", "name": "Funcții polinomiale, radical, putere", "theory": "" },
+          { "id": "fn_6", "name": "Funcția exponențială și logaritmică", "theory": "" },
+          { "id": "fn_7", "name": "Funcțiile trigonometrice și inversele lor", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_ecuatii",
+        "name": "Ecuații",
+        "theory": "",
+        "sections": [
+          { "id": "ec_1", "name": "Ecuații iraționale (radicali de ordin 2 sau 3)", "theory": "" },
+          { "id": "ec_2", "name": "Ecuații exponențiale", "theory": "" },
+          { "id": "ec_3", "name": "Ecuații logaritmice", "theory": "" },
+          { "id": "ec_4", "name": "Ecuații algebrice cu coeficienți în Z, R, Q, C", "theory": "" },
+          { "id": "ec_5", "name": "Ecuații binome, bipătrate, reciproce", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_metode_numarare",
+        "name": "Metode de numărare",
+        "theory": "",
+        "sections": [
+          { "id": "mn_1", "name": "Mulțimi finite ordonate; numărul funcțiilor f:A→B", "theory": "" },
+          { "id": "mn_2", "name": "Permutări", "theory": "" },
+          { "id": "mn_3", "name": "Aranjamente", "theory": "" },
+          { "id": "mn_4", "name": "Combinări și proprietăți", "theory": "" },
+          { "id": "mn_5", "name": "Binomul lui Newton și aplicații", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_matrice",
+        "name": "Calcul matriceal și sisteme liniare",
+        "theory": "",
+        "sections": [
+          { "id": "mx_1", "name": "Operații cu matrice (adunare, înmulțire, înmulțire cu scalar)", "theory": "" },
+          { "id": "mx_2", "name": "Determinanți (ordin ≤3) și proprietăți", "theory": "" },
+          { "id": "mx_3", "name": "Matrice inversabile, ecuații matriceale", "theory": "" },
+          { "id": "mx_4", "name": "Sisteme de ecuații liniare cu cel mult 3 necunoscute", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_grupuri",
+        "name": "Grupuri și izomorfisme",
+        "theory": "",
+        "sections": [
+          { "id": "gr_1", "name": "Legi de compoziție internă", "theory": "" },
+          { "id": "gr_2", "name": "Grup, subgrup", "theory": "" },
+          { "id": "gr_3", "name": "Morfisme și izomorfisme de grupuri", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_inele_corpuri",
+        "name": "Inele și corpuri",
+        "theory": "",
+        "sections": [
+          { "id": "ic_1", "name": "Definiții și exemple", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_polinoame",
+        "name": "Inele de polinoame cu coeficienți într-un corp comutativ",
+        "theory": "",
+        "sections": [
+          { "id": "pol_1", "name": "Operații cu polinoame", "theory": "" },
+          { "id": "pol_2", "name": "Teorema împărțirii cu rest", "theory": "" },
+          { "id": "pol_3", "name": "Divizibilitatea polinoamelor (c.m.m.d.c., c.m.m.m.c.)", "theory": "" },
+          { "id": "pol_4", "name": "Descompunerea în factori ireductibili", "theory": "" },
+          { "id": "pol_5", "name": "Rădăcini ale polinoamelor; relații între rădăcini și coeficienți", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_limite_derivate",
+        "name": "Limite, continuitate și derivabilitate",
+        "theory": "",
+        "sections": [
+          { "id": "ld_1", "name": "Limita unei funcții într-un punct, limite laterale", "theory": "" },
+          { "id": "ld_2", "name": "Cazuri exceptate în calculul limitelor", "theory": "" },
+          { "id": "ld_3", "name": "Asimptotele graficului unei funcții", "theory": "" },
+          { "id": "ld_4", "name": "Continuitatea unei funcții, operații cu funcții continue", "theory": "" },
+          { "id": "ld_5", "name": "Derivata într-un punct, derivabilitatea", "theory": "" },
+          { "id": "ld_6", "name": "Calculul derivatelor de ordinul I și II", "theory": "" },
+          { "id": "ld_7", "name": "Regulile lui L'Hospital", "theory": "" },
+          { "id": "ld_8", "name": "Studiul funcțiilor cu ajutorul derivatelor", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_integrale",
+        "name": "Primitive și integrala definită",
+        "theory": "",
+        "sections": [
+          { "id": "int_1", "name": "Primitive uzuale, liniaritatea integralei nedefinite", "theory": "" },
+          { "id": "int_2", "name": "Proprietățile integralei definite", "theory": "" },
+          { "id": "int_3", "name": "Integrarea prin părți", "theory": "" },
+          { "id": "int_4", "name": "Integrarea prin schimbare de variabilă", "theory": "" },
+          { "id": "int_5", "name": "Descompunere în fracții simple", "theory": "" },
+          { "id": "int_6", "name": "Aria unei suprafețe plane", "theory": "" },
+          { "id": "int_7", "name": "Volumul unui corp de rotație", "theory": "" }
+        ]
+      }
+    ],
+    "informatics": [
+      {
+        "id": "lesson_info_algoritmi",
+        "name": "1. Algoritmi",
+        "theory": "",
+        "sections": [
+          { "id": "1.1", "name": "Noțiunea de algoritm, caracteristici", "theory": "" },
+          { "id": "1.2", "name": "Date, variabile, expresii, operații", "theory": "" },
+          { "id": "1.3", "name": "Structuri de bază (liniară, alternativă, repetitivă)", "theory": "" },
+          { "id": "1.4", "name": "Descrierea algoritmilor (pseudocod)", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_limbaj",
+        "name": "2. Elementele de bază ale unui limbaj de programare",
+        "theory": "",
+        "sections": [
+          { "id": "2.1", "name": "Vocabularul limbajului", "theory": "" },
+          { "id": "2.2", "name": "Constante. Identificatori", "theory": "" },
+          { "id": "2.3", "name": "Tipuri de date. Operatori aritmetici, logici, relaționali", "theory": "" },
+          { "id": "2.4", "name": "Definirea tipurilor de date", "theory": "" },
+          { "id": "2.5", "name": "Variabile. Declararea variabilelor", "theory": "" },
+          { "id": "2.6", "name": "Definirea constantelor", "theory": "" },
+          { "id": "2.7", "name": "Structura programelor. Comentarii", "theory": "" },
+          { "id": "2.8", "name": "Expresii. Instrucțiunea de atribuire", "theory": "" },
+          { "id": "2.9", "name": "Citirea/scrierea datelor", "theory": "" },
+          { "id": "2.10", "name": "Structuri de control (instrucțiunea compusă, alternative și repetitive)", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_subprograme_predef",
+        "name": "3. Subprograme predefinite",
+        "theory": "",
+        "sections": [
+          { "id": "3.1", "name": "Subprograme. Mecanisme de transfer prin parametri", "theory": "" },
+          { "id": "3.2", "name": "Proceduri și funcții predefinite", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_tipuri_struct",
+        "name": "4. Tipuri structurate de date",
+        "theory": "",
+        "sections": [
+          { "id": "4.1", "name": "Tipul tablou", "theory": "" },
+          { "id": "4.2", "name": "Tipul șir de caractere", "theory": "" },
+          { "id": "4.3", "name": "Tipul înregistrare", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_fisiere",
+        "name": "5. Fișiere text",
+        "theory": "",
+        "sections": [
+          { "id": "5.1", "name": "Fișiere text. Tipuri de acces", "theory": "" },
+          { "id": "5.2", "name": "Proceduri și funcții predefinite pentru fișiere text", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_alg_elem",
+        "name": "6. Algoritmi elementari",
+        "theory": "",
+        "sections": [
+          { "id": "6.1", "name": "Probleme care operează asupra cifrelor unui număr", "theory": "" },
+          { "id": "6.2", "name": "Divizibilitate. Numere prime. Algoritmul lui Euclid", "theory": "" },
+          { "id": "6.3", "name": "Șirul lui Fibonacci. Calculul sumelor", "theory": "" },
+          { "id": "6.4", "name": "Determinare minim/maxim", "theory": "" },
+          { "id": "6.5", "name": "Metode de ordonare (bulelor, inserției, selecției, numărării)", "theory": "" },
+          { "id": "6.6", "name": "Interclasare", "theory": "" },
+          { "id": "6.7", "name": "Metode de căutare (secvențială, binară)", "theory": "" },
+          { "id": "6.8", "name": "Analiza complexității unui algoritm", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_subprograme_user",
+        "name": "7. Subprograme definite de utilizator",
+        "theory": "",
+        "sections": [
+          { "id": "7.1", "name": "Proceduri și funcții: declarare, apel, parametri formali/efectivi, valoare/referință, vizibilitate", "theory": "" },
+          { "id": "7.2", "name": "Proiectarea modulară a rezolvării unei probleme", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_recursivitate",
+        "name": "8. Recursivitate",
+        "theory": "",
+        "sections": [
+          { "id": "8.1", "name": "Prezentare generală", "theory": "" },
+          { "id": "8.2", "name": "Proceduri și funcții recursive", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_backtracking",
+        "name": "9. Metoda backtracking (iterativă sau recursivă)",
+        "theory": "",
+        "sections": [
+          { "id": "9.1", "name": "Prezentare generală", "theory": "" },
+          { "id": "9.2", "name": "Probleme de generare. Oportunitatea utilizării backtracking-ului", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_combinatoriale",
+        "name": "10. Generarea elementelor combinatoriale",
+        "theory": "",
+        "sections": [
+          { "id": "10.1", "name": "Permutări, aranjamente, combinări", "theory": "" },
+          { "id": "10.2", "name": "Produs cartezian, submulțimi", "theory": "" }
+        ]
+      },
+      {
+        "id": "lesson_info_grafuri",
+        "name": "11. Grafuri",
+        "theory": "",
+        "sections": [
+          { "id": "11.1", "name": "Grafuri neorientate: terminologie, proprietăți, reprezentare", "theory": "" },
+          { "id": "11.2", "name": "Grafuri orientate: terminologie, proprietăți, reprezentare", "theory": "" },
+          { "id": "11.3", "name": "Arbori: terminologie, reprezentare în memorie", "theory": "" }
+        ]
+      }
+    ]
+  },
   "weekly_rhythm": [
     "Ziua 1: matematica fundament + informatica fundament",
     "Ziua 2: matematica probleme grele + informatica probleme grele",

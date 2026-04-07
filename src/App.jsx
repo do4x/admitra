@@ -15,6 +15,7 @@ import { Statistics } from "./components/legacy/Statistics.jsx";
 import { AssessmentMatrix } from "./components/legacy/AssessmentMatrix.jsx";
 import { WeeklyCoach } from "./components/legacy/WeeklyCoach.jsx";
 import { MistakesPage } from "./components/mistakes/MistakesPage.jsx";
+import { LessonsPage } from "./components/lessons/LessonsPage.jsx";
 
 export default function App() {
   const { state, dispatch } = useAppState();
@@ -52,7 +53,7 @@ export default function App() {
   // --- Session handlers ---
   const handleStartLesson = (chapterId) => {
     const mix = getDifficultyMix(chapterId);
-    const started = startSession(chapterId, "lesson", mix);
+    const started = startSession(chapterId, "lesson", mix, { excludeTrivial: state.profile?.excludeTrivial });
     if (!started) {
       setNoQuestionsMsg(chapterId);
       setTimeout(() => setNoQuestionsMsg(null), 3000);
@@ -122,6 +123,11 @@ export default function App() {
           />
         ) : (
           <>
+            {activeTab === "lessons" && (
+              <div className="content-col">
+                <LessonsPage />
+              </div>
+            )}
             {activeTab === "skillTree" && (
               <div className="content-col">
                 {noQuestionsMsg && (

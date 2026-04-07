@@ -9,7 +9,8 @@ const defaultProfile = {
   targetCycle: "2026",
   dailyHours: "2-3",
   daysPerWeek: 7,
-  primaryTrack: "C++ algoritmic"
+  primaryTrack: "C++ algoritmic",
+  excludeTrivial: false
 };
 
 function createChapter(topic, subject, index) {

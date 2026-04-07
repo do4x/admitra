@@ -19,6 +19,7 @@ export const ACTIONS = {
   REMOVE_MISTAKE: "REMOVE_MISTAKE",
   SET_SELECTED_DAY: "SET_SELECTED_DAY",
   TOGGLE_MILESTONE: "TOGGLE_MILESTONE",
+  TOGGLE_EXCLUDE_TRIVIAL: "TOGGLE_EXCLUDE_TRIVIAL",
   RESET: "RESET"
 };
 
@@ -340,6 +341,16 @@ function reducer(state, action) {
             }
           },
           manualOverrides: newOverrides
+        }
+      };
+    }
+
+    case ACTIONS.TOGGLE_EXCLUDE_TRIVIAL: {
+      return {
+        ...state,
+        profile: {
+          ...state.profile,
+          excludeTrivial: !state.profile.excludeTrivial
         }
       };
     }

@@ -26,13 +26,13 @@ function questionXPValue(question) {
 export function useSession(dispatch) {
   const [session, setSession] = useState(INITIAL_SESSION);
 
-  const startSession = useCallback((chapterId, sessionType, difficultyMix) => {
+  const startSession = useCallback((chapterId, sessionType, difficultyMix, opts = {}) => {
     let questions;
     if (sessionType === "placement") {
       questions = getPlacementQuestions(chapterId);
     } else {
       const mix = difficultyMix ?? { easy: 4, medium: 5, hard: 3 };
-      questions = getSessionQuestions(chapterId, mix);
+      questions = getSessionQuestions(chapterId, mix, opts);
     }
 
     if (questions.length === 0) {

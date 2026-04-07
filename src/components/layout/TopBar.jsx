@@ -6,7 +6,8 @@ export function TopBar({ gamification, activeTab, onTabChange, onReset }) {
   const { currentStreak, isStreakAtRisk } = useStreak(gamification);
 
   const tabs = [
-    ["skillTree", "Lectii"],
+    ["lessons", "Lectii"],
+    ["skillTree", "Exerciții"],
     ["roadmap", "Parcurs"],
     ["statistics", "Statistici"],
     ["weekly", "Planner"],

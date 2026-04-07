@@ -45,9 +45,12 @@ function shuffleArray(arr) {
   return a;
 }
 
-export function getQuestionsForChapter(chapterId, difficulty = null, count = null) {
+export function getQuestionsForChapter(chapterId, difficulty = null, count = null, opts = {}) {
   const pool = questionRegistry[chapterId] ?? [];
-  const filtered = difficulty ? pool.filter((q) => q.difficulty === difficulty) : pool;
+  let filtered = difficulty ? pool.filter((q) => q.difficulty === difficulty) : pool;
+  if (opts.excludeTrivial) {
+    filtered = filtered.filter((q) => q.difficulty !== "easy");
+  }
   const shuffled = shuffleArray(filtered);
   return count ? shuffled.slice(0, count) : shuffled;
 }
@@ -62,10 +65,10 @@ export function getPlacementQuestions(chapterId) {
 }
 
 // For a lesson session with a specified difficulty mix
-export function getSessionQuestions(chapterId, mix) {
-  const easy = getQuestionsForChapter(chapterId, "easy", mix.easy);
-  const medium = getQuestionsForChapter(chapterId, "medium", mix.medium);
-  const hard = getQuestionsForChapter(chapterId, "hard", mix.hard);
+export function getSessionQuestions(chapterId, mix, opts = {}) {
+  const easy = getQuestionsForChapter(chapterId, "easy", mix.easy, opts);
+  const medium = getQuestionsForChapter(chapterId, "medium", mix.medium, opts);
+  const hard = getQuestionsForChapter(chapterId, "hard", mix.hard, opts);
   // Interleave: easy first, then increasing difficulty
   return [...easy, ...medium, ...hard];
 }

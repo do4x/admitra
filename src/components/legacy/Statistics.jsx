@@ -71,6 +71,20 @@ export function Statistics({ state, dispatch }) {
         </div>
       </header>
 
+      <label className="exclude-trivial-toggle">
+        <input
+          type="checkbox"
+          checked={state.profile?.excludeTrivial ?? false}
+          onChange={() => dispatch({ type: ACTIONS.TOGGLE_EXCLUDE_TRIVIAL })}
+        />
+        <span>
+          <span className="toggle-label">Exclude exercițiile ușoare</span>
+          <span className="toggle-hint">
+            Sesiunile vor conține doar întrebări de dificultate medie și grea.
+          </span>
+        </span>
+      </label>
+
       <div className="panel-grid">
         <section className="card large-card">
           <div className="section-header">

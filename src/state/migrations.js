@@ -27,6 +27,10 @@ export function migrateState(raw) {
     parsed = migrateV3toV4(parsed);
   }
 
+  if ((parsed.stateVersion ?? 1) < 5) {
+    parsed = migrateV4toV5(parsed);
+  }
+
   return parsed;
 }
 
@@ -89,11 +93,22 @@ function migrateV2toV3(v2) {
 function migrateV3toV4(v3) {
   return {
     ...v3,
-    stateVersion: STATE_VERSION,
+    stateVersion: 4,
     mistakes: (v3.mistakes ?? []).map((m) => ({
       problemImage: null,
       solutionImage: null,
       ...m
     }))
+  };
+}
+
+function migrateV4toV5(v4) {
+  return {
+    ...v4,
+    stateVersion: 5,
+    profile: {
+      ...v4.profile,
+      excludeTrivial: v4.profile?.excludeTrivial ?? false
+    }
   };
 }
